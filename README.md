@@ -10,3 +10,48 @@ GO 공식 사이트: https://go.dev/ (혹은 https://golang.org)
     - 정적 타입 (statically typed)
     - garbage collection 기능 제공
     - CSP(communicating sequential processes) 스타일의 concurrent 프로그래밍을 지원
+
+---
+
+https://www.youtube.com/watch?v=YS4e4q9oBaU
+
+⭐️ Course Contents ⭐️  
+
+✓ (0:00:00) Introduction  
+
+✓ (0:16:57) Setting Up a Development Environment  
+
+✓  (0:35:48) Variables  
+  - variable declaration  
+  - redeclaration and shadowing  
+  - all variables must be used
+  - visibility 
+    - lower case first letter for package scope
+    - upper case first letter to export
+    - no private scope
+  - naming conventions  
+  - type conversions  
+
+⌨️ (0:57:05) Primitives  
+⌨️ (1:26:29) Constants  
+⌨️ (1:47:53) Arrays and Slices  
+⌨️ (2:17:20) Maps and Structs  
+⌨️ (2:48:00) If and Switch Statements  
+⌨️ (3:21:17) Looping  
+⌨️ (3:41:34) Defer, Panic, and Recover  
+⌨️ (4:03:57) Pointers  
+⌨️ (4:21:30) Functions  
+⌨️ (4:57:59) Interfaces  
+⌨️ (5:33:57) Goroutines  
+⌨️ (6:05:10) Channels  
+
+---
+
+- strong and statically typed (한번 type이 선언되면 변하지 않음)
+- excellent community
+- key features :
+    - simplicity
+    - fast compile times
+    - garbage collected => not managing my own memory
+    - built-in concurrency
+    - compile to standalone binaries (application을 실행하기 위한 모든 파일, 라이브러리 등이 바이너리로 저장됨)
