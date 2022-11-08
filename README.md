@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
 
 ✓ (0:16:57) Setting Up a Development Environment  
 
-✓  (0:35:48) Variables  
+✓ (0:35:48) Variables  
   - variable declaration  
   - redeclaration and shadowing  
   - all variables must be used
@@ -34,19 +34,77 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
     - upper case first letter to export
     - no private scope
   - naming conventions  
-  - type conversions  
+  - type conversions    
 
-⌨️ (0:57:05) Primitives  
-⌨️ (1:26:29) Constants  
+✓ (0:57:05) Primitives 아주 기초의 것  
+  - boolean type
+    - values are true or false
+    - not an alias for other types(e.g. int)
+    - zero value is false
+  - numeric types (integers, floating point, complex numbers)
+    - integers 
+      - signed integers (value can be +/-)
+        - int type has varing size, bun min 32 bits
+        - 8 bit(int8) through 64 bit (int64)
+      - unsigned integers (value +)
+        - 8 bit(byte and unit8) through 32 bit (unit32)
+      - arithmetic operations
+        - addition, substraction, multiplication, division, remainder
+      - bitwise operations
+        - and, or, xor, not
+      - zero value is 0 
+      - can't mix types in same family (unit16 + unit32 = error)
+    - floating point numbers
+      - follow IEEE-754 standard
+      - zero value is 0
+      - 32 and 64 bit versions
+      - Literal styles 
+        - decimal (3.14)
+        - exponential (13e18 or 2E10)
+        - mixed (13.7e12)
+      - arithmetic operations
+        - addition, substraction, multiplication, division
+    - complex numbers
+      - zero value is (0+0i)
+      - 64 and 128 bit versions (real + imagine )
+      - built-in functions
+        - complex : make complex number from two floats
+        - real : get real part as float
+        - imag : get imaginary part as float
+      - arithmetic operations
+          - addition, substraction, multiplication, division
+  - text types (strings, rune)
+    - strings
+      - UTF-8
+      - immutable (불변)
+      - can be concatenated with + operator
+      - can be converted to []byte <-> string
+    - rune
+      - UTF-32
+      - alias for int32
+      - special methods normally required to process
+        - e.g. strings.Reader#ReadRune
+
+⌨️ (1:26:29) Constants
+
 ⌨️ (1:47:53) Arrays and Slices  
+
 ⌨️ (2:17:20) Maps and Structs  
+
 ⌨️ (2:48:00) If and Switch Statements  
+
 ⌨️ (3:21:17) Looping  
+
 ⌨️ (3:41:34) Defer, Panic, and Recover  
-⌨️ (4:03:57) Pointers  
+
+⌨️ (4:03:57) Pointers
+
 ⌨️ (4:21:30) Functions  
+
 ⌨️ (4:57:59) Interfaces  
+
 ⌨️ (5:33:57) Goroutines  
+
 ⌨️ (6:05:10) Channels  
 
 ---
