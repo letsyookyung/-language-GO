@@ -25,7 +25,7 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
 
 ✓ (0:16:57) Setting Up a Development Environment  
 
-✓ (0:35:48) Variables  
+✓ (0:35:48) Variables 변수
   - variable declaration  
   - redeclaration and shadowing  
   - all variables must be used
@@ -36,7 +36,7 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
   - naming conventions  
   - type conversions    
 
-✓ (0:57:05) Primitives 아주 기초의 것  
+✓ (0:57:05) Primitives 데이터 타입, 아주 기초의 것  
   - boolean type
     - values are true or false
     - not an alias for other types(e.g. int)
@@ -85,7 +85,30 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
       - special methods normally required to process
         - e.g. strings.Reader#ReadRune
 
-⌨️ (1:26:29) Constants
+️✓ (1:26:29) Constants 상수 <-> 변수 variable   
+  - constants 
+    - immutable, but can be shadowed
+    - replaced by the compiler at compile time
+      - value must be calculable at compile time
+  - naming convention
+    - named like variables
+      - PascalCase for exported constants
+      - camelCase for internal constants
+  - typed constants
+    - typed constants work like immutable variables
+      - can interoperate only with same type
+  - untyped constants
+    - untyped constants work like literals
+      - can interoperate with similar types
+  - enumerated constants
+    - special symbol iota allows related constants to be created easily
+    - iota starts at 0 in each const block and increments by one
+    - watch out of constant values that match zero values for variables
+  - enumeration expressions
+    - operations that can be determined at compile time are allowed
+      - arithmetic
+      - bitwise operations
+      - bitshifting (<<, >>)
 
 ⌨️ (1:47:53) Arrays and Slices  
 
