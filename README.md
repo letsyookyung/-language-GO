@@ -111,6 +111,10 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
       - bitshifting (<<, >>)
 
 ️✓ (1:47:53) Arrays and Slices (collection type)  
+   1. arrays는 크기는 고정  
+      slices 크기는 가변
+   2. arrays는 복사하면 별도 메모리를 생성  
+      slices 복사할 경우 같은 곳을 참조
   - arrays
     - collection of items with same type
     - fixed size , compile time 떄 정해짐
@@ -135,33 +139,53 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
     - "append" function to add elements to slice
       - may cause expensive copy operation if underlying array is too small
     - copies refer to same underlying array
-     
 
-⌨️ (2:17:20) Maps and Structs  
 
-⌨️ (2:48:00) If and Switch Statements  
+️✓️ (2:17:20) Maps and Structs  (collection type)
+  - Maps 
+    - collections of value types that are accessed via keys
+    - created via literals or via 'make' function
+    - members accessed via [key]syntax
+      - myMap["key"] = "value"
+    - check for presence with "value, ok" form of result
+    - multiple assignments refer to same underlying data (call by reference)
+  - Structs
+    - collections of disparate data types that describe a single concept
+    - keyed by named fields
+    - normally created as types, but anonymous structs are allowed
+    - structs are value types
+    - no inheritance, but can use composition via embedding
+    - tags can be added to struct fields to describe field
+    
+    
+⌨️ (2:48:00) If and Switch Statements (control flow tool)
+  - if statements
+    - initializer
+    - comparison operators
+    - logical operators
+    - short circuiting (조건 하나에 걸리면, 다음으로 안넘어감)
+    - if-else statements
+    - if-else-if statements
+    - equality and floats
+  - switch statements
+    - switching on a tag
+    - cases with multiple tests
+    - initializers (;)
+    - switching on a no tag
+    - fallthrough 
+    - type switches (data type관련)
+    - breaking out early
 
 ⌨️ (3:21:17) Looping  
 
-⌨️ (3:41:34) Defer, Panic, and Recover  
+⌨️ ~~(3:41:34) Defer, Panic, and Recover~~  
 
-⌨️ (4:03:57) Pointers
+⌨️ ~~(4:03:57) Pointers~~
 
-⌨️ (4:21:30) Functions  
+~~⌨️ (4:21:30) Functions~~  
 
-⌨️ (4:57:59) Interfaces  
+~~⌨️ (4:57:59) Interfaces~~  
 
-⌨️ (5:33:57) Goroutines  
+~~⌨️ (5:33:57) Goroutines~~  
 
-⌨️ (6:05:10) Channels  
-
----
-
-- strong and statically typed (한번 type이 선언되면 변하지 않음)
-- excellent community
-- key features :
-    - simplicity
-    - fast compile times
-    - garbage collected => not managing my own memory
-    - built-in concurrency
-    - compile to standalone binaries (application을 실행하기 위한 모든 파일, 라이브러리 등이 바이너리로 저장됨)
+~~⌨️ (6:05:10) Channels~~  
