@@ -110,7 +110,32 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
       - bitwise operations
       - bitshifting (<<, >>)
 
-⌨️ (1:47:53) Arrays and Slices  
+️✓ (1:47:53) Arrays and Slices (collection type)  
+  - arrays
+    - collection of items with same type
+    - fixed size , compile time 떄 정해짐
+    - declaration styles
+      - a := [3]int{1,2,3}
+      - a := [...]int{1,2,3}
+      - var a [3]int
+    - access via zero-based index
+      - a := [3]int {1,3,5} // a[1] == 3
+    - len function returns size of array
+    - copies 
+  - slices
+    - backed by array (배열이 뒷받침되어지다) 
+    - creation styles
+      - slice existing arrary or slice
+      - literal style [...]
+      - via make function
+        - a := make([]int, 10) // create slice with capacity and length = 10
+        - a := make([]int, 10, 100) // slice with length == 10 and capacity ==100
+    - "len" function returns length of slice
+    - "cap" function returns length of underlying 뒤에숨은 array
+    - "append" function to add elements to slice
+      - may cause expensive copy operation if underlying array is too small
+    - copies refer to same underlying array
+     
 
 ⌨️ (2:17:20) Maps and Structs  
 
