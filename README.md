@@ -21,22 +21,28 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
 
 ⭐️ Course Contents ⭐️  
 
-✓ (0:00:00) Introduction  
+ (0:00:00) Introduction  
 
-✓ (0:16:57) Setting Up a Development Environment  
+ (0:16:57) Setting Up a Development Environment  
 
-✓ (0:35:48) Variables 변수
-  - variable declaration  
-  - redeclaration and shadowing  
-  - all variables must be used
-  - visibility 
+<details>
+<summary> (0:35:48) Variables 변수</summary>
+
+  - variable declaration    
+  - redeclaration and shadowing    
+  - all variables must be used  
+  - visibility   
     - lower case first letter for package scope
     - upper case first letter to export
     - no private scope
   - naming conventions  
-  - type conversions    
+  - type conversions
 
-✓ (0:57:05) Primitives 데이터 타입, 아주 기초의 것  
+</details>
+
+<details>
+<summary> (0:57:05) Primitives 데이터 타입, 아주 기초의 것 </summary>
+
   - boolean type
     - values are true or false
     - not an alias for other types(e.g. int)
@@ -84,8 +90,11 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
       - alias for int32
       - special methods normally required to process
         - e.g. strings.Reader#ReadRune
+</details>
 
-️✓ (1:26:29) Constants 상수 <-> 변수 variable   
+<details>
+️<summary> (1:26:29) Constants 상수 </summary>
+
   - constants 
     - immutable, but can be shadowed
     - replaced by the compiler at compile time
@@ -109,8 +118,12 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
       - arithmetic
       - bitwise operations
       - bitshifting (<<, >>)
+</details>
 
-️✓ (1:47:53) Arrays and Slices (collection type)  
+<details>
+<summary>(1:47:53) Arrays and Slices (collection type) </summary>
+
+
    1. arrays는 크기는 고정  
       slices 크기는 가변
    2. arrays는 복사하면 별도 메모리를 생성  
@@ -139,9 +152,11 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
     - "append" function to add elements to slice
       - may cause expensive copy operation if underlying array is too small
     - copies refer to same underlying array
+</details>
 
+<details>
+<summary>(2:17:20) Maps and Structs  (collection type)</summary>
 
-️✓️ (2:17:20) Maps and Structs  (collection type)
   - Maps 
     - collections of value types that are accessed via keys
     - created via literals or via 'make' function
@@ -156,9 +171,11 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
     - structs are value types
     - no inheritance, but can use composition via embedding
     - tags can be added to struct fields to describe field
-    
-    
-⌨️ (2:48:00) If and Switch Statements (control flow tool)
+</details>
+
+<details>
+<summary> (2:48:00) If and Switch Statements (control flow tool) </summary>
+
   - if statements
     - initializer
     - comparison operators
@@ -175,8 +192,26 @@ https://www.youtube.com/watch?v=YS4e4q9oBaU
     - fallthrough 
     - type switches (data type관련)
     - breaking out early
+</details>
 
-⌨️ (3:21:17) Looping  
+<details>
+<summary>(3:21:17) Looping</summary>
+ 
+ - for statements
+   - for statements 
+     - simple loops
+       - for initializer; test; incrementer {}
+       - for test {} 
+       - for {} 
+   - exiting early
+     - break
+     - continue
+     - labels (Loop:~Loop) with break statement
+   - looping over collections
+     - arrays, slices, maps, strings, ~~channels~~
+     - for k, v := range collection {}
+
+</details>
 
 ⌨️ ~~(3:41:34) Defer, Panic, and Recover~~  
 
